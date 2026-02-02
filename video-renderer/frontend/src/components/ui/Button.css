@@ -1,0 +1,148 @@
+/* Base Button Style from Uiverse.io, adapted for generic usage */
+.gradient-btn {
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background: linear-gradient(to bottom right,
+            #6366F1 0%,
+            rgba(99, 102, 241, 0) 30%);
+    background-color: rgba(99, 102, 241, 0.2);
+    display: inline-flex;
+    align-items: stretch;
+    /* Change from center to stretch to let inner fill height */
+    justify-content: center;
+    border: none;
+    padding: 1px;
+    /* The border thickness */
+    border-radius: 12px;
+    outline: none;
+    text-decoration: none;
+    vertical-align: middle;
+    /* Fix vertical alignment */
+    box-sizing: border-box;
+}
+
+.gradient-btn:hover,
+.gradient-btn:focus-visible {
+    background-color: rgba(99, 102, 241, 0.7);
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
+    outline: none;
+}
+
+/* Inner content area */
+.gradient-btn-inner {
+    flex: 1;
+    /* Allow to grow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #fff;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    border-radius: 11px;
+    /* Remove width: 100% and height: 100% to avoid inline-flex collapse */
+    width: auto;
+    min-width: 0;
+}
+
+/* Variant overrides */
+.gradient-btn[data-variant="secondary"] {
+    background: linear-gradient(to bottom right, #374151 0%, rgba(55, 65, 81, 0) 30%);
+    background-color: rgba(55, 65, 81, 0.2);
+}
+
+.gradient-btn[data-variant="secondary"]:hover {
+    background-color: rgba(55, 65, 81, 0.7);
+    box-shadow: 0 0 10px rgba(55, 65, 81, 0.3);
+}
+
+.gradient-btn[data-variant="danger"] {
+    background: linear-gradient(to bottom right, #EF4444 0%, rgba(239, 68, 68, 0) 30%);
+    background-color: rgba(239, 68, 68, 0.2);
+}
+
+.gradient-btn[data-variant="danger"]:hover {
+    background-color: rgba(239, 68, 68, 0.7);
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+}
+
+.gradient-btn[data-variant="success"] {
+    background: linear-gradient(to bottom right, #10B981 0%, rgba(16, 185, 129, 0) 30%);
+    background-color: rgba(16, 185, 129, 0.2);
+}
+
+.gradient-btn[data-variant="success"]:hover {
+    background-color: rgba(16, 185, 129, 0.7);
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+}
+
+.gradient-btn[data-variant="ghost"] {
+    background: transparent;
+    padding: 0;
+}
+
+.gradient-btn[data-variant="ghost"] .gradient-btn-inner {
+    background-color: transparent;
+}
+
+.gradient-btn[data-variant="ghost"]:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: none;
+}
+
+/* Sizes */
+.gradient-btn[data-size="sm"] {
+    min-height: 36px;
+}
+
+.gradient-btn[data-size="sm"] .gradient-btn-inner {
+    padding: 0 0.75rem;
+    font-size: 0.875rem;
+}
+
+.gradient-btn[data-size="default"] {
+    min-height: 44px;
+}
+
+.gradient-btn[data-size="default"] .gradient-btn-inner {
+    padding: 0 1.25rem;
+    font-size: 0.95rem;
+}
+
+.gradient-btn[data-size="lg"] {
+    min-height: 50px;
+}
+
+.gradient-btn[data-size="lg"] .gradient-btn-inner {
+    padding: 0 1.75rem;
+    font-size: 1rem;
+}
+
+.gradient-btn[data-size="xl"] {
+    min-height: 58px;
+}
+
+.gradient-btn[data-size="xl"] .gradient-btn-inner {
+    padding: 0 2.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.gradient-btn[data-size="icon"] {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.gradient-btn[data-size="icon"] .gradient-btn-inner {
+    padding: 0;
+    border-radius: 9px;
+}
+
+/* Disabled state */
+.gradient-btn:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    filter: grayscale(1);
+}
