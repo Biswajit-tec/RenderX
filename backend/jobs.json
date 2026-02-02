@@ -542,5 +542,30 @@
     "cpu_cores_used": 20,
     "output_filename": "d0a67b63-9b90-496c-8997-9e82b5641acd_processed.mp4",
     "output_path": "outputs\\d0a67b63-9b90-496c-8997-9e82b5641acd_processed.mp4"
+  },
+  "f5b23445-adb7-48e6-90c6-25a834a2c434": {
+    "job_id": "f5b23445-adb7-48e6-90c6-25a834a2c434",
+    "status": "completed",
+    "filename": "test vdo.mp4",
+    "file_path": "uploads\\f5b23445-adb7-48e6-90c6-25a834a2c434_test vdo.mp4",
+    "filter_type": "contrast",
+    "analytics": {
+      "duration": 60.0,
+      "width": 1280,
+      "height": 720,
+      "fps": 25.02,
+      "aspect_ratio": "1280:720",
+      "total_frames": 1501,
+      "has_audio": false,
+      "file_size_mb": 28.79,
+      "bitrate_mbps": 4.03
+    },
+    "sequential_time": 810.89,
+    "parallel_time": 115.84,
+    "speedup": 7.0,
+    "segments_processed": 7,
+    "cpu_cores_used": 20,
+    "output_filename": "f5b23445-adb7-48e6-90c6-25a834a2c434_processed.mp4",
+    "output_path": "outputs\\f5b23445-adb7-48e6-90c6-25a834a2c434_processed.mp4"
   }
 }
